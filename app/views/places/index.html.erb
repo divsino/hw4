@@ -1,15 +1,10 @@
 <div class="container mt-5">
-
   <h1 class="mb-4">Places</h1>
-
   <div class="row">
     <% @places.each do |place| %>
       <div class="col-md-4 mb-4">
-
         <div class="card h-100">
-
           <div class="card-body d-flex flex-column">
-
             <h5 class="card-title"><%= link_to place["name"], place_path(place["id"]), class: "stretched-link" %></h5>
           </div>
         </div>
@@ -20,4 +15,5 @@
     <%= link_to 'Add New Place', new_place_path, class: "btn btn-primary" %>
   </div>
 </div>
+
 
